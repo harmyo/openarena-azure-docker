@@ -1,0 +1,17 @@
+// Vorlage – vor dem Start kopieren:
+//   cp baseoa/server.cfg.example baseoa/server.cfg
+// Die echte server.cfg ist per .gitignore ausgeschlossen und landet nie im Repo.
+
+seta sv_hostname "Mein OpenArena Server"
+seta sv_maxclients 8
+seta g_gametype 0          // 0 = Free for All
+seta sv_pure 1
+seta com_hunkmegs 128
+
+// Eigenes, starkes Passwort setzen. Leer = rcon deaktiviert.
+seta rconpassword ""
+
+seta bot_enable 1
+seta bot_minplayers 2      // füllt den Server bei wenig Spielern mit Bots auf
+
+map oa_dm4

@@ -1,0 +1,10 @@
+# baseoa/ ist als Volume gemountet: Dort liegt die echte server.cfg (mit rcon-Passwort),
+# und der Server schreibt zur Laufzeit eigene Dateien hinein (Logs, Configs).
+# Nur die Vorlage wird versioniert.
+baseoa/*
+!baseoa/server.cfg.example
+
+# SSH-Schlüssel und Umgebungsdateien
+*.pem
+*.key
+.env

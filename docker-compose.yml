@@ -1,0 +1,9 @@
+services:
+  openarena:
+    build: .
+    container_name: openarena-server
+    restart: unless-stopped
+    ports:
+      - "27960:27960/udp"
+    volumes:
+      - ./baseoa:/root/.openarena/baseoa
